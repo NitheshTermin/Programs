@@ -119,9 +119,9 @@ function successor(n){
   return null;
 }
 
-console.log(successor(9))
+//console.log(successor(9))
 
 // console.log(depthFirstRecursion(a));
-// console.log(depthFirst(a));
+ console.log(depthFirst(a));
 // console.log(postOrder(a));
 // console.log(inOrder(a));

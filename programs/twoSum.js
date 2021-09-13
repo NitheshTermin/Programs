@@ -9,4 +9,23 @@ var twoSum = function(nums, target) {
     }  
 };
 
-console.log(twoSum([2,7,11,15], 9));
+var twoSumHashMap = function(nums, target){
+    let hashMap = new Map();
+
+    nums.forEach(element => {
+        hashMap.set(target - element, element);
+    });
+
+    for (let i = 0; i < nums.length; i++) {
+       
+        if(hashMap.has(nums[i])){
+            return [nums[i], hashMap.get(nums[i])];
+        }
+        
+    }
+
+    return [];
+}
+
+console.log(twoSumHashMap([2,7,11,15,-1], 10));
+
